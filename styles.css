@@ -967,11 +967,21 @@ section:not(.hero) {
 @media (max-width: 968px) {
     .navbar .container {
         padding: 1rem 20px;
+        justify-content: center;
+        position: relative;
     }
 
     .nav-brand {
         font-size: 1.5rem;
         letter-spacing: 1.5px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 20px;
     }
 
     .nav-menu {
@@ -1062,7 +1072,8 @@ section:not(.hero) {
 
     .hamburger {
         display: flex;
-        position: relative;
+        position: absolute;
+        right: 20px;
         z-index: 1001;
     }
 
@@ -1182,16 +1193,26 @@ section:not(.hero) {
 
     .navbar .container {
         padding: 0.85rem 15px;
+        justify-content: center;
+        position: relative;
     }
 
     .nav-brand {
         font-size: 1.25rem;
         letter-spacing: 1px;
         padding-bottom: 3px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .nav-brand::after {
         height: 2px;
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 15px;
     }
 
     .hero {
@@ -1344,10 +1365,20 @@ section:not(.hero) {
 @media (max-width: 400px) {
     .navbar .container {
         padding: 0.75rem 12px;
+        justify-content: center;
+        position: relative;
     }
 
     .nav-brand {
         font-size: 1.15rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 12px;
     }
 
     .hero {
