@@ -965,18 +965,24 @@ section:not(.hero) {
 
 /* Responsive Design */
 @media (max-width: 968px) {
+    .navbar {
+        min-height: 70px;
+    }
+
     .navbar .container {
-        padding: 1rem 20px;
+        padding: 1.4rem 20px;
         justify-content: center;
         position: relative;
+        min-height: 70px;
     }
 
     .nav-brand {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         letter-spacing: 1.5px;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        padding-bottom: 6px;
     }
 
     .hamburger {
@@ -1189,18 +1195,20 @@ section:not(.hero) {
 @media (max-width: 600px) {
     .navbar {
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        min-height: 65px;
     }
 
     .navbar .container {
-        padding: 0.85rem 15px;
+        padding: 1.2rem 15px;
         justify-content: center;
         position: relative;
+        min-height: 65px;
     }
 
     .nav-brand {
-        font-size: 1.25rem;
+        font-size: 1.4rem;
         letter-spacing: 1px;
-        padding-bottom: 3px;
+        padding-bottom: 5px;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -1363,17 +1371,23 @@ section:not(.hero) {
 }
 
 @media (max-width: 400px) {
+    .navbar {
+        min-height: 60px;
+    }
+
     .navbar .container {
-        padding: 0.75rem 12px;
+        padding: 1rem 12px;
         justify-content: center;
         position: relative;
+        min-height: 60px;
     }
 
     .nav-brand {
-        font-size: 1.15rem;
+        font-size: 1.3rem;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        padding-bottom: 4px;
     }
 
     .hamburger {
