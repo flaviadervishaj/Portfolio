@@ -4,12 +4,12 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript. Per
 
 ## Features
 
-- 🎨 Modern and clean design
-- 📱 Fully responsive (works on all devices)
-- ⚡ Smooth scrolling and animations
-- 🎯 Easy to customize
-- 🚀 Fast and lightweight
-- ♿ Accessible
+- Modern and clean design
+- Fully responsive (works on all devices)
+- Smooth scrolling and animations
+- Easy to customize
+- Fast and lightweight
+-  Accessible
 
 ## Sections
 
@@ -158,5 +158,5 @@ If you have any questions or need help customizing your portfolio, feel free to 
 
 ---
 
-**Good luck with your job applications! 🚀**
+**Good luck with your job applications! **
 
