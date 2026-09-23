@@ -2,20 +2,22 @@
   "name": "portfolio-website",
   "version": "1.0.0",
   "description": "Professional Portfolio Website",
+  "type": "module",
   "main": "index.html",
   "scripts": {
     "dev": "live-server --port=3000 --open=/index.html",
-    "start": "live-server --port=3000 --open=/index.html"
+    "start": "live-server --port=3000 --open=/index.html",
+    "check": "node --check script.js",
+    "test": "node --test"
   },
   "keywords": [
     "portfolio",
     "website",
     "personal"
   ],
-  "author": "",
+  "author": "Flavia Dervishaj",
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.2"
   }
 }
-
