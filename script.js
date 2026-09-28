@@ -70,7 +70,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Navbar background on scroll
 const navbar = document.querySelector('.navbar');
-let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
@@ -81,7 +80,6 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.05)';
     }
     
-    lastScroll = currentScroll;
 });
 
 // Animate skill bars on scroll
@@ -147,12 +145,8 @@ contactForm.addEventListener('submit', (e) => {
         return;
     }
     
-    // Here you would typically send the form data to a server
-    // For now, we'll just show an alert
-    alert('Thank you for your message, ' + name + '! I will get back to you soon.');
-    
-    // Reset form
-    contactForm.reset();
+    const body = `From: ${name} (${email})\n\n${message}`;
+    window.location.href = `mailto:flaviadervishaj@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
 // Add fade-in animation on scroll with stagger effect
@@ -225,23 +219,4 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
-// Typing effect for hero title (optional enhancement)
-const heroTitle = document.querySelector('.hero-title');
-if (heroTitle) {
-    const text = heroTitle.textContent;
-    heroTitle.textContent = '';
-    let i = 0;
-    
-    const typeWriter = () => {
-        if (i < text.length) {
-            heroTitle.textContent += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 50);
-        }
-    };
-    
-    // Uncomment the line below to enable typing effect
-    // typeWriter();
-}
 
