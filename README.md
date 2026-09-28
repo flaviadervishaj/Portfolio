@@ -10,7 +10,7 @@ A responsive portfolio for my web development projects. Built with HTML, CSS, an
 - [Fitness Tracker](https://fitness-tracker-two-phi.vercel.app/) ([source](https://github.com/flaviadervishaj/Fitness-Tracker)) — exercise guides and personal workout history; React, JavaScript, Python, Flask, SQLAlchemy, PostgreSQL and JWT.
 - [ClientFlow](https://client-flow-ten.vercel.app/) ([source](https://github.com/flaviadervishaj/ClientFlow)) — client project tracking with account-based storage; React, JavaScript, Firebase Auth and Firestore.
 - [ColdChat](https://coldchat.vercel.app/) — community chat and private conversations; HTML, CSS, JavaScript, Node.js and Supabase. [Source code](https://github.com/flaviadervishaj/ColdChat).
-- [Course Center](https://github.com/flaviadervishaj/course-center-odoo) — academic Odoo 17 module for course administration, enrollment, attendance and payments. Source code is public; there is no hosted demo.
+- [Course Center](https://github.com/flaviadervishaj/course-center-odoo) — Odoo 17 course management project in development. The public source includes models and views for courses, enrollment, attendance and payments; there is no hosted demo.
 
 ## Run locally
 
