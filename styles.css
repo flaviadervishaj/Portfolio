@@ -205,10 +205,10 @@ a, button, .btn, .nav-link, .social-link, .project-link, .skill-category, .proje
 }
 
 .highlight {
-    background: linear-gradient(135deg, #06b6d4, #0891b2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    text-shadow: 0 2px 16px rgba(11, 46, 91, 0.32);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.85);
     position: relative;
     display: inline-block;
 }
