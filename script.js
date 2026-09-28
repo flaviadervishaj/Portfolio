@@ -82,30 +82,6 @@ window.addEventListener('scroll', () => {
     
 });
 
-// Animate skill bars on scroll
-const animateSkillBars = () => {
-    const skillBars = document.querySelectorAll('.skill-progress');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const progress = entry.target.getAttribute('data-progress');
-                entry.target.style.width = progress + '%';
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.5
-    });
-    
-    skillBars.forEach(bar => {
-        observer.observe(bar);
-    });
-};
-
-// Initialize skill bar animation
-animateSkillBars();
-
 // Form handling
 const contactForm = document.getElementById('contactForm');
 

@@ -612,63 +612,30 @@ section:not(.hero) {
     background-clip: text;
 }
 
-.skill-items {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+.section-intro {
+    color: var(--text-light);
+    text-align: center;
+    margin: -0.5rem auto 2rem;
+    max-width: 38rem;
 }
 
-.skill-item {
+.skill-list {
     display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.skill-name {
-    font-weight: 600;
-    color: var(--text-dark);
-    font-size: 1rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.skill-bar {
-    width: 100%;
-    height: 12px;
+.skill-list li {
+    border: 1px solid var(--border-color);
     background: var(--bg-light);
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
-.skill-bar::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    animation: shimmer 2s infinite;
-}
-
-@keyframes shimmer {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
-
-.skill-progress {
-    height: 100%;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    border-radius: 10px;
-    width: 0%;
-    transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    z-index: 1;
+    color: var(--text-dark);
+    border-radius: 999px;
+    padding: 0.45rem 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 /* Projects Section */
@@ -732,7 +699,8 @@ section:not(.hero) {
     transition: opacity 0.4s ease;
 }
 
-.project-card:hover .project-overlay {
+.project-card:hover .project-overlay,
+.project-card:focus-within .project-overlay {
     opacity: 1;
 }
 
@@ -798,6 +766,36 @@ section:not(.hero) {
 
 .tag:hover {
     transform: scale(1.1);
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.7rem 1.1rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.project-actions a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.project-actions a:hover,
+.project-actions a:focus-visible {
+    text-decoration: underline;
+}
+
+.project-actions span {
+    color: var(--text-light);
+}
+
+@media (hover: none) {
+    .project-overlay { display: none; }
 }
 
 /* Contact Section */
